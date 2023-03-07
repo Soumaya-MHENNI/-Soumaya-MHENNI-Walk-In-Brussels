@@ -1,0 +1,224 @@
+:root{
+    
+    --body:#E9E9E9;
+    --titre:#707070;
+    --text1:#7B7979;
+    --text2:#FFA101;
+    --formulaire: #D1D1D1;
+    --bouton:#2F4F58;
+    --color-success:#2F4F58;
+    --color-error:#e74c3c;
+   
+    
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf)
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: var(--body);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.main{
+max-height: 100vh;
+width: 50%;
+display: flex;
+flex-direction: column;
+
+
+
+
+}
+.image{
+    position: relative;
+    width: 50%;
+    min-height: 100vh;
+  background-image: url(../images/illu/logInFaces.png) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.logo_create{
+   
+position: relative;
+width: 24%;
+height: 125px;
+padding: 20px;
+margin-left: 35px;
+    
+}
+
+.img_logo{
+    width: 80%;
+height: 90%;
+}
+
+.box_formCreate{
+   
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+.formCreate{
+
+    background-color: var(--formulaire);
+    width: 55%;
+    height: 80vh;
+    border-radius: 30px;
+  box-shadow:  5px 5px 7px #7B79797A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+
+}
+.form_create{
+    width: 370px;
+height: 460px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+.form_create small{
+ 
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  align-self:flex-start ;
+margin-left: 40px;
+font-family: "RobotoThin";
+font-size:14px;
+}
+.inputboite{
+    position: relative;
+    width: 330px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 3px solid #7B79797A;
+    border-radius: 23px;
+
+    
+    outline: none;
+  }
+  
+  input[type=text]:first-child{
+     background-image: url(../images/illu/person.png);
+     background-position: 13px 6px;
+     background-repeat: no-repeat;
+     background-size: 23px;
+     padding-left: 51px;
+
+  }
+  .form-control input[placeholder=Email]{
+    background-image: url(../images/illu/mail.png);
+    background-position: 15px 10px;
+background-repeat: no-repeat;
+background-size: 22px;
+padding-left: 51px;
+
+ }
+ input[type=password]{
+  background-image: url(../images/illu/key.png);
+  background-position: 13px 16px;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  padding-left: 52px;
+
+}
+ .form-control input:focus {
+    border: 3px solid var(--titre);
+
+  }
+ 
+  
+  
+  .formCreate h1{
+   font-family:"Roboto-bold"; 
+   color: var(--text1);
+   font-size: 2rem;
+  }
+
+  .create_h1{
+    margin-top: 5px;
+    font-family:"Roboto-bold"; 
+    color: var(--text1);
+    font-size: 27px;
+  }
+  .create{
+    align-self: flex-end;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 224px;
+  }
+
+  .btn_create{
+    background-color:var(--bouton);
+    
+       border-radius: 30px;
+       height: 40px;
+       width:71px;
+       border: none;
+       padding: 10px 20px;
+        display: inline-block;
+        cursor: pointer;
+        background-image: url(../images/illu/arrow.png);
+        background-position: 17px 5px;
+        background-repeat: no-repeat;
+        background-size: 39px;
+      
+  }
+  
+  .btn_create:hover{
+    background-color:var(--text2);
+      transform: scale(1.05);
+  }
+
+  .LogInPage {
+    width: 261px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+   }
+.LogInPage p{
+    font-family: "RobotoThin";
+    color: var(--grey);
+}
+.LogInPage a{
+
+font-family: "RobotoRegular";
+font-size: 1.3rem;
+  color: var(--text2);
+
+}
+.LogInPage a:hover{
+  transform: scale(1.25);
+  cursor: pointer;
+  
+}
+.form-control.success input{
+  border-color: var(--color-success);
+}
+.form-control.error input{
+  border-color: var(--color-error);
+}
+.form-control.error small{
+  color: var(--color-error);
+  visibility: visible;
+}

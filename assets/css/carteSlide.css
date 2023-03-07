@@ -1,0 +1,389 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf)
+  }
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf)
+  }
+  @font-face {
+    font-family: "RobotoThin";
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+.boxSlider{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 470px;
+    height: 100vh;
+    background: #31525B;
+    display: flex;
+
+    flex-direction: column;
+    z-index:3;
+    overflow: hidden;
+}
+
+.HeaderBoxSlider{
+    margin: 10px;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 28px;
+    padding-left: 28px;
+
+
+}
+
+
+.CloseBox{
+    margin-top: 8px;
+    width: 30px;
+    height: 55%;
+    z-index: 3;
+}
+.CloseBox:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+
+
+.SearchSlider{
+    width: 216px;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    margin-left: 66px;
+
+
+}
+
+#rechercheSlide{
+    background-image: url(../images/illu/search.png);
+    background-position: 13px 6px;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    padding-left: 51px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: var(--text2) 2px solid;
+
+}
+.BoxContainer{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.BoxImagePOI{
+    height: 250px;
+    margin-top: 11px;
+
+}
+.imagePOI{
+    min-width: 100%;
+    height: 100%;
+
+}
+
+.container-aside{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 22px;
+    margin-right: 22px;
+
+
+}
+.titlePOI{
+    width:100%;
+    height: 32px;
+    color: white;
+    font-family: "Roboto-Bold";
+    font-size: 1.5rem;
+
+}
+.DescPOI{
+
+    width: 100%;
+    height: 36%;
+    color: white;
+    font-family: "Roboto-Regular";
+    text-align: left;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    overflow: scroll;
+    text-align: justify;
+    line-height:18px;
+}
+.UrlPOI{
+    width: 148px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.UrlPOI:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.imgURL{
+    width: 25px;
+height: 27px;
+}
+.UrlPOI>h3{
+    color:var(--text2);
+    font-family: "Roboto-Bold";
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+.container-aside .AdvPOI{
+    width:257px;
+    height: 32px;
+    color: white;
+    font-family: "Roboto-Bold";
+    font-size: 1.5rem;
+    margin-top:10px;
+}
+.carousel-container{
+    height: 266px;
+    min-width: 100%;
+    margin-top: 11px;
+    overflow:hidden;
+    position:relative;
+}
+.carouselNavigation{
+    margin-top: 45%;
+    height: 27%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    /* background-color: #141313a1; */
+    z-index: 5;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxNavigation{
+    margin-top: 44%;
+    height: 27%;
+    width: 100%;
+    position: absolute;
+  
+    background-color: #141313a1;
+    z-index: 5;
+    
+}
+#prevButton{
+    height: 40px;
+width: 71px;
+border: none;
+padding: 10px 20px;
+display: inline-block;
+cursor: pointer;
+background-image: url(../images/illu/arrow1.png);
+background-position: 17px 5px;
+background-repeat: no-repeat;
+background-size: 39px;
+margin-top: 48%;
+position: absolute;
+z-index: 10;
+margin-left: 10px;
+
+}
+#nextButton{
+    height: 40px;
+    width:71px;
+    border: none;
+    padding: 10px 20px;
+     display: inline-block;
+     cursor: pointer;
+     background-image: url(../images/illu/arrow.png);
+     background-position: 17px 5px;
+     background-repeat: no-repeat;
+     background-size: 39px;
+     margin-top: 48%;
+     position: absolute;
+     z-index: 10;
+     margin-left: 83%;
+}
+.carousel-slide{
+
+    height: 100%;
+    min-width: 100%;
+    margin-top: 11px;
+    display: flex;
+}
+.carousel-slide .carteImg{
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.carousel-slide .carteImg>img{
+    min-width: 100%;
+    height: 100%;
+
+}
+
+.titreImg{
+    position: absolute;
+margin-top: 44%;
+height: 21%;
+width: 50%;
+z-index: 6;
+align-items: center;
+display: flex;
+justify-content: center;
+color: white;
+font-family: "Roboto-Regular";
+font-size: 1.3rem;
+margin-left: 25%;
+}
+
+.titreImg:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* reviews */
+.containerReviews{
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.containerReviews1{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ReviewsPOI{
+    width:257px;
+    height: 32px;
+    margin-top: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.ReviewsPOI>h2{
+    color: white;
+    font-family: "Roboto-Bold";
+    font-size: 1.5rem;
+    margin-top:10px;
+}
+.ReviewsUserName{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 35px;
+}
+.ReviewsUserName>h3{
+
+    color: white;
+    font-family: "Roboto-Regular";
+    font-size: 1.3rem;
+    margin-right: 8px
+}
+.ReviewsUserName1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+.ReviewsUserName1>h3{
+
+    color: white;
+    font-family: "Roboto-Regular";
+    font-size: 1.3rem;
+    margin-right: 8px
+}
+
+.ReviewsUserName1>h4{
+
+    color: var(--text2);
+    font-family: "Roboto-Regular";
+    font-size: 1rem;
+    
+}
+
+.containerReviews .commentPoi{
+    height: 153px;
+    width: 100%;
+   display: flex;
+   flex-direction:column;
+}
+.containerReviews .commentPoi1{
+    height: 153px;
+    width: 100%;
+   display: flex;
+   flex-direction:column;
+}
+
+.ReviewsText{
+height: 100%;
+width: 100%;
+background-color: white;
+border-radius: 30px;
+align-self: center;
+font-family: "Roboto-Regular";
+font-size: 1.05rem;
+
+}
+.UserReviewsText{
+    width: 90%;
+    height: 36%;
+    color: white;
+    font-family: "RobotoThin";
+    text-align: left;
+    font-size: 1.05rem;
+   
+}
+
+.ReviewsComment{
+    height: 40px;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+.ReviewsComment>.btn_comment{
+    background-color: var(--text2);
+    border-radius: 30px;
+    height: 100%;
+    width: 107px;
+    border: none;
+    /* padding: 10px 20px; */
+    display: inline-block;
+    cursor: pointer;
+    background-position: 17px 5px;
+    background-repeat: no-repeat;
+    background-size: 39px;
+    align-items: center;
+    color: white;
+    font-family: "Roboto-Regular";
+    font-size: 1rem;
+    margin-right: 8px;
+  }
+  .ReviewsComment>.btn_comment:hover{
+  transform: scale(1.2);
+    cursor: pointer;
+}

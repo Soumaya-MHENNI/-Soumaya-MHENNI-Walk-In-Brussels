@@ -1,0 +1,115 @@
+<section class="contact" id="contact" name="contact">
+
+    
+
+     <div class="titre noir">
+
+         <h2 class="titre-text"><span>C</span>ontact</h2>
+
+         <p class="rdv">Soumettez votre demande de rendez-vous en complétant ce formulaire ou par téléphone.
+
+            Nous vous répondrons dans les plus brefs délais.</br>
+
+          Sans réponse de notre part dans les 24h, merci d'appeler.</p>
+
+     </div>
+
+     
+
+     <div class="contenu">
+
+        <div class="info">
+
+         
+
+            <ul class="contact-li">
+
+                
+
+                <li class="contact-address ">
+
+                  <i class="icon-home"></i><b>Adresse :</b>
+
+                   Porte d'Anderlecht,173 Bruxelles
+
+                </li>
+
+            </br>
+
+                <li><i class="far fa-calendar"></i> <b>Temps:</b> 09:00 - 18:00 (Lundi au Vendredi) <br>        09:00 - 13:00 (Samedi) </li>
+
+            </br>
+
+                <li><i class="icon-phone"></i> <b>Téléphone:</b> 02/123.45.67</li>
+
+            </br>
+
+                <li><i class="icon-envelope"></i><a href="#" ><b>Email:</b> contact@dentalcare.com</a></li>
+
+            </br>
+
+                <li><i class="icon-globe"></i> <a href="#"><b>Site-web:</b> dentalcare.com</a></li>
+
+              </ul>
+
+        </div>
+
+
+
+         <div class="contactform" id="contactform">
+
+            <div><h3>Prendre rendez-vous</h3></div>
+
+             <div>
+
+             <div class="inputboite">
+
+                 <input type="text" placeholder="Nom">
+
+             </div>
+
+             <div class="inputboite">
+
+                <input type="text" placeholder="Email">
+
+             </div>
+
+             <div class="inputboite">
+
+                <input type="text" placeholder="Téléphone">
+
+             </div>
+
+             
+
+             <div class="inputboite">
+
+                <textarea placeholder="Message(mentionnez la date et l'heure vsp)"></textarea>
+
+             </div>
+
+             <div class="inputboite" id="inputboite">
+
+                <button onclick="ouvre_popup()"><a  class="btn2">Soumettre</a></button>
+
+             </div>
+
+         </div>
+
+        </div>
+
+     
+
+    
+
+     
+
+   
+
+ </section>
+
+ <div class="copyright">
+
+     <p>copyright 2022 <a href="#">Soumaya</a> Interface 3</p>
+
+ </div>
